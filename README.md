@@ -17,6 +17,8 @@
 
 Run async tasks one by one.
 
+If you want to run async functions in parallel, check out [`same-time`](https://github.com/IonicaBizau/node-same-time).
+
 ## Installation
 
 ```sh
