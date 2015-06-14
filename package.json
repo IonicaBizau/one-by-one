@@ -1,0 +1,27 @@
+{
+  "name": "one-by-one",
+  "version": "1.0.0",
+  "description": "Run async tasks one by one.",
+  "main": "lib/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:IonicaBizau/node-one-by-one.git"
+  },
+  "keywords": [
+    "async",
+    "one-by-one",
+    "waterfall"
+  ],
+  "author": "Ionică Bizău <bizauionica@gmail.com>",
+  "license": "KINDLY",
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/node-one-by-one/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/node-one-by-one"
+}
