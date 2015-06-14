@@ -10,6 +10,7 @@ OneByOne([
     }
   , function (cb, data) {
         console.log(data);
+        // => "Hello World"
         setTimeout(function () {
             cb(new Error("Some error"));
         }, 100);
