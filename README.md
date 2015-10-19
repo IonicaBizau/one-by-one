@@ -53,7 +53,6 @@ OneByOne([
 ], function (err, data) {
     console.log(err, data);
 });
-
 ```
 
 ## Documentation
@@ -71,6 +70,27 @@ Calls functions one by one and memorizes the results.
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
+## Who uses this
+If you are using this library in one of your projects, add it in this list. :sparkles:
+
+ - [`blah`](https://github.com/IonicaBizau/node-blah)
+
+ - [`cdnjs-importer`](https://github.com/cdnjs/cdnjs-importer)
+
+ - [`cobol`](https://github.com/IonicaBizau/node-cobol)
+
+ - [`engine-tools`](https://github.com/jillix/engine-tools) by jillix
+
+ - [`gif-cli`](https://github.com/IonicaBizau/gif-cli)
+
+ - [`git-stats-importer`](https://github.com/IonicaBizau/git-stats-importer)
+
+ - [`gpm`](https://github.com/IonicaBizau/node-gpm)
+
+ - [`gry`](https://github.com/IonicaBizau/node-gry)
+
+ - [`ssh-remote`](https://github.com/IonicaBizau/ssh-remote)
+
 ## License
 [KINDLY][license] © [Ionică Bizău][website]–The [LICENSE](/LICENSE) file contains
 a copy of the license.
@@ -80,4 +100,4 @@ a copy of the license.
 [website]: http://ionicabizau.net
 [docs]: /DOCUMENTATION.md
 [paypal-donations]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MG98D7NPFZ3MG
-[donate-now]: http://i.imgur.com/jioicaN.png
+[donate-now]: http://i.imgur.com/6cMbHOC.png
