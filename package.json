@@ -1,6 +1,6 @@
 {
   "name": "one-by-one",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Run async tasks one by one.",
   "main": "lib/index.js",
   "directories": {
@@ -11,24 +11,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:IonicaBizau/node-one-by-one.git"
+    "url": "git@github.com:IonicaBizau/one-by-one.js.git"
   },
   "keywords": [
     "async",
     "one-by-one",
     "waterfall"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com>",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "KINDLY",
   "bugs": {
-    "url": "https://github.com/IonicaBizau/node-one-by-one/issues"
+    "url": "https://github.com/IonicaBizau/one-by-one.js/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/node-one-by-one",
+  "homepage": "https://github.com/IonicaBizau/one-by-one.js",
   "dependencies": {
     "deffy": "^2.0.0"
   },
   "devDependencies": {},
   "blah": {
-    "description": "If you want to run async functions in parallel, check out [`same-time`](https://github.com/IonicaBizau/node-same-time)."
+    "description": "If you want to run async functions in parallel, check out [`same-time`](https://github.com/IonicaBizau/same-time.js)."
   }
 }
