@@ -1,6 +1,6 @@
 {
   "name": "one-by-one",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Run async tasks one by one.",
   "main": "lib/index.js",
   "directories": {
@@ -19,7 +19,7 @@
     "waterfall"
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
-  "license": "KINDLY",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/IonicaBizau/one-by-one.js/issues"
   },
