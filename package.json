@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/IonicaBizau/one-by-one",
   "dependencies": {
-    "deffy": "^2.0.0"
+    "deffy": "^2.2.0"
   },
   "devDependencies": {},
   "blah": {

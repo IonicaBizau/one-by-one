@@ -2,7 +2,7 @@
 
 > Run async tasks one by one.
 
-If you want to run async functions in parallel, check out [`same-time`](https://github.com/IonicaBizau/same-time.js).
+If you want to run async functions in parallel, check out [`same-time`](https://github.com/IonicaBizau/same-time).
 
 ## Installation
 
