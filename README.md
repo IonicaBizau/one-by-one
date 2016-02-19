@@ -13,36 +13,55 @@ $ npm i --save one-by-one
 ## Example
 
 ```js
-// Dependencies
-var OneByOne = require("one-by-one");
+"use strict";
+
+const oneByOne = require("one-by-one");
 
 // Call these functions one by one
-OneByOne([
-    function (cb) {
+oneByOne([
+    cb => {
         setTimeout(function () {
             cb(null, "Hello World");
         }, 1000);
     }
-  , function (cb, data) {
+  , (cb, data) => {
         console.log(data);
         // => "Hello World"
         setTimeout(function () {
             cb(new Error("Some error"));
         }, 100);
     }
-  , function (cb) {
+  , cb => {
         // This will NOT be triggered because the
         // previous sent an error
         cb(null, null);
     }
-], function (err, data) {
+], (err, data) => {
     console.log(err, data);
+    // => [Error: Some error] [ 'Hello World' ]
+});
+
+// Call these functions one by one
+oneByOne([
+    function (cb) {
+        setTimeout(function () {
+            cb(null, "Hello World");
+        }, 1000);
+    }
+  , function (cb, prev) {
+        setTimeout(function () {
+            cb(null, prev.replace("World", "Mars"));
+        }, 1000);
+    }
+], function (err, data, message) {
+    console.log(err, data, message);
+    // null [ 'Hello World', 'Hello Mars' ] 'Hello Mars'
 });
 ```
 
 ## Documentation
 
-### `OneByOne(arr, cb)`
+### `oneByOne(arr, cb)`
 Calls functions one by one and memorizes the results.
 
 #### Params
@@ -50,7 +69,7 @@ Calls functions one by one and memorizes the results.
 - **Function** `cb`: The callback function called with an error (or `null`) and the results array.
 
 #### Return
-- **OneByOne** The `OneByOne` function.
+- **oneByOne** The `oneByOne` function.
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
