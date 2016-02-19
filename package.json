@@ -1,6 +1,6 @@
 {
   "name": "one-by-one",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Run async tasks one by one.",
   "main": "lib/index.js",
   "directories": {
@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/IonicaBizau/one-by-one",
   "dependencies": {
-    "deffy": "^2.2.0"
+    "deffy": "^2.2.0",
+    "sliced": "^1.0.1"
   },
   "devDependencies": {},
   "blah": {
