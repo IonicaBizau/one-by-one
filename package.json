@@ -1,6 +1,6 @@
 {
   "name": "one-by-one",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Run async tasks one by one.",
   "main": "lib/index.js",
   "directories": {
@@ -31,5 +31,16 @@
   "devDependencies": {},
   "blah": {
     "description": "If you want to run async functions in parallel, check out [`same-time`](https://github.com/IonicaBizau/same-time)."
-  }
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
