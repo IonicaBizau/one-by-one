@@ -1,5 +1,7 @@
 
-# one-by-one [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/one-by-one.svg)](https://www.npmjs.com/package/one-by-one) [![Downloads](https://img.shields.io/npm/dt/one-by-one.svg)](https://www.npmjs.com/package/one-by-one) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+# one-by-one
+
+ [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/one-by-one.svg)](https://www.npmjs.com/package/one-by-one) [![Downloads](https://img.shields.io/npm/dt/one-by-one.svg)](https://www.npmjs.com/package/one-by-one) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Run async tasks one by one.
 
@@ -45,17 +47,19 @@ oneByOne([
 
 // Call these functions one by one
 oneByOne([
-    function (cb) {
-        setTimeout(function () {
-            cb(null, "Hello World");
-        }, 1000);
-    }
-  , function (cb, prev) {
-        setTimeout(function () {
-            cb(null, prev.replace("World", "Mars"));
-        }, 1000);
-    }
-], function (err, data, message) {
+    Math.random() > 0.5 ? next => {
+        console.log("Generated a random number greater than 0.5.");
+        next();
+    } : null
+  , cb => setTimeout(
+        () => cb(null, "Hello World")
+      , 1000
+    )
+  , (cb, prev) => setTimeout(
+        () => cb(null, prev.replace("World", "Mars"))
+      , 1000
+    )
+], (err, data, message) => {
     console.log(err, data, message);
     // null [ 'Hello World', 'Hello Mars' ] 'Hello Mars'
 });
@@ -87,6 +91,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - [`cdnjs-importer`](https://github.com/cdnjs/cdnjs-importer)—Easy way to import a library into CDNJS.
  - [`cobol`](https://github.com/IonicaBizau/node-cobol)—COBOL bridge for NodeJS which allows you to run COBOL code from NodeJS.
  - [`engine-tools`](https://github.com/jillix/engine-tools) (by jillix)—Engine Tools library and CLI app.
+ - [`fortran`](https://github.com/IonicaBizau/node-fortran)—Fortran bridge for Node.js which allows you to run Fortran code from Node.js.
  - [`gif-cli`](https://github.com/IonicaBizau/gif-cli)—Gif animations in your terminal!
  - [`git-package-json`](https://github.com/IonicaBizau/git-package-json#readme)—Get the package.json contents from git repositories.
  - [`git-stats-importer`](https://github.com/IonicaBizau/git-stats-importer)—Imports your commits from a repository into git-stats history.
@@ -95,6 +100,7 @@ If you are using this library in one of your projects, add it in this list. :spa
  - [`image-to-ascii`](https://github.com/IonicaBizau/image-to-ascii)—A Node.JS module that converts images to ASCII art.
  - [`nodeice`](https://github.com/IonicaBizau/nodeice)—Another PDF invoice generator
  - [`np-init`](https://github.com/IonicaBizau/np-init#readme)—Easily start a npm package from scratch.
+ - [`ship-release`](https://github.com/IonicaBizau/ship-release#readme)—Publish new versions on GitHub and npm with ease.
  - [`ssh-remote`](https://github.com/IonicaBizau/ssh-remote)—Automagically switch on the SSH remote url in a Git repository.
 
 ## :scroll: License
