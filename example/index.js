@@ -28,17 +28,19 @@ oneByOne([
 
 // Call these functions one by one
 oneByOne([
-    function (cb) {
-        setTimeout(function () {
-            cb(null, "Hello World");
-        }, 1000);
-    }
-  , function (cb, prev) {
-        setTimeout(function () {
-            cb(null, prev.replace("World", "Mars"));
-        }, 1000);
-    }
-], function (err, data, message) {
+    Math.random() > 0.5 ? next => {
+        console.log("Generated a random number greater than 0.5.");
+        next();
+    } : null
+  , cb => setTimeout(
+        () => cb(null, "Hello World")
+      , 1000
+    )
+  , (cb, prev) => setTimeout(
+        () => cb(null, prev.replace("World", "Mars"))
+      , 1000
+    )
+], (err, data, message) => {
     console.log(err, data, message);
     // null [ 'Hello World', 'Hello Mars' ] 'Hello Mars'
 });
