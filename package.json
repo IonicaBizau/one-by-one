@@ -1,6 +1,6 @@
 {
   "name": "one-by-one",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Run async tasks one by one.",
   "main": "lib/index.js",
   "directories": {
@@ -40,6 +40,7 @@
     "src/",
     "resources/",
     "menu/",
+    "scripts/",
     "cli.js",
     "index.js"
   ]
