@@ -1,6 +1,6 @@
 {
   "name": "one-by-one",
-  "version": "3.2.3",
+  "version": "3.2.4",
   "description": "Run async tasks one by one.",
   "main": "lib/index.js",
   "directories": {
@@ -18,7 +18,7 @@
     "one-by-one",
     "waterfall"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IonicaBizau/one-by-one/issues"
@@ -36,12 +36,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ]
