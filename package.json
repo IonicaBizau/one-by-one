@@ -1,6 +1,6 @@
 {
   "name": "one-by-one",
-  "version": "3.2.8",
+  "version": "3.2.9",
   "description": "Run async tasks one by one.",
   "main": "lib/index.js",
   "directories": {
@@ -43,6 +43,8 @@
     "menu/",
     "cli.js",
     "index.js",
+    "index.d.ts",
+    "package-lock.json",
     "bloggify.js",
     "bloggify.json",
     "bloggify/"
